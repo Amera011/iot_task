@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8C8C8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/calc"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#C8C8C8"
+        android:text=""
+        android:gravity="end"
+        android:textSize="40sp"
+        android:textColor="@color/darkGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="8dp"
+
+        android:background="#C8C8C8"
+        android:gravity="end"
+
+        android:text="0"
+        android:textColor="@color/gray"
+        android:textSize="80sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calc" />
+
+    <TableLayout
+        android:id="@+id/buttons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/delAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightGray"
+                android:onClick="delAll"
+                android:text="c"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/delOne"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightGray"
+                android:onClick="delOne"
+                android:text="x"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/div"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightGray"
+                android:onClick="div"
+                android:text="/"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/seven"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="seven"
+                android:text="7"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/eight"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="eight"
+                android:text="8"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/nine"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="nine"
+                android:text="9"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/multi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightGray"
+                android:onClick="multi"
+                android:text="*"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/four"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="four"
+                android:text="4"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/five"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="five"
+                android:text="5"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/sex"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="sex"
+                android:text="6"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightGray"
+                android:onClick="min"
+                android:text="-"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/one"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="one"
+                android:text="1"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/two"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="two"
+                android:text="2"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/three"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="three"
+                android:text="3"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightGray"
+                android:onClick="add"
+                android:text="+"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/negOrPos"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="setNegative"
+                android:text="+/-"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/zero"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="zero"
+                android:text="0"
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/dot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:onClick="dot"
+                android:text="."
+                android:textColor="#434242"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/equal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/pink"
+                android:onClick="result"
+                android:text="="
+                android:textColor="#434242"
+                android:textSize="30sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
